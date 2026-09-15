@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #eeeeee;
+
+    transition: background-color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+
+/*Overall*/
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas:
+
+        "personal dropdown"
+
+        "personal background"
+
+        "images table";
+
+    gap: 18px;
+}
+
+
+/* Lahat ng box */
+
+.box {
+    background-color: #dddddd;
+    border: 3px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.personal {
+    grid-area: personal;
+}
+
+.dropdown-box {
+    grid-area: dropdown;
+}
+
+.background-box {
+    grid-area: background;
+}
+
+.images-box {
+    grid-area: images;
+}
+
+.table-box {
+    grid-area: table;
+}
+
+
+/*A*/
+
+.personal label {
+    display: block;
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.personal input {
+    width: 70%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+}
+
+
+/*C*/
+
+.dropdown-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+select {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+
+/*Mga Pindutan sa C saka B*/
+
+button {
+    padding: 11px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+button:hover {
+    background-color: #cccccc;
+}
+
+
+.background-box {
+    text-align: center;
+}
+
+.background-box button {
+    padding: 30px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.background-box button:hover {
+    background-color: #cccccc;
+}
+
+
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.myImage {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+
+.myImage:hover {
+    transform: scale(1.3);
+    z-index: 10;
+}
+
+
+
+.table-container {
+    max-height: 330px;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #cccccc;
+}
+
+
+

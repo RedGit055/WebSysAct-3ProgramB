@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Program B</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Program B</h1>
+
+    <div class="main-container">
+
+        <div class="box personal">
+            <h2>A. Personal Information</h2>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName">
+
+            <label for="section">Section:</label>
+            <input type="text" id="section">
+        </div>
+
+
+        <div class="box dropdown-box">
+            <h2>C. Remove Dropdown Item</h2>
+
+            <div class="dropdown-content">
+
+                <select id="myDropdown">
+                     <option value="" disabled selected>Select an item</option>
+                     <option>Apple</option>
+                     <option>Banana</option>
+                     <option>Orange</option>
+                     <option>Mango</option>
+                     <option>Grapes</option>
+                </select>
+
+                <button onclick="removeItem()">
+                    Remove Selected Item
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="box background-box">
+            <h2>E. Changing Background Color</h2>
+
+            <button onclick="changeBackground()">
+                Change Background Color
+            </button>
+        </div>
+
+
+        <div class="box images-box">
+            <h2>D. Zooming Images</h2>
+
+            <div class="images-container">
+                <img src="/images/freddie.jpg" class="myImage">
+                <img src="/images/billy.jpg" class="myImage">
+            </div>
+        </div>
+
+
+        <div class="box table-box">
+            <h2>B. Add Row to Table</h2>
+
+            <div class="table-container">
+
+                <table id="sampleTable">
+
+                    <tr>
+                        <th>First Column</th>
+                        <th>Second Column</th>
+                    </tr>
+
+                    <tr>
+                        <td>Row 1 Cell 1</td>
+                        <td>Row 1 Cell 2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Row 2 Cell 1</td>
+                        <td>Row 2 Cell 2</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <button onclick="insertRow()">
+                Insert Row
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
